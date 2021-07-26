@@ -10,22 +10,15 @@ export default class Login extends Component {
                     <Image  source={require('../assets/twitter-logo.png')} style={styles.logo} />
                 </View>
                 <View style={styles.box}>
-                <Text style={styles.text}>Log in to Twitter </Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Username"
-                    
-                />
-                    <TextInput
-                    style={styles.input}
-                    placeholder="Password"/>
-
-                <TouchableOpacity style={styles.button}>
-                                    <Text style={styles.text}>LOGIN</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity onPress={() => this.props.navigation.navigate("Register")} style={styles.button}>
-                                    <Text style={styles.text}>Register</Text>
-                                </TouchableOpacity>
+                    <Text style={styles.text}>Log in to Twitter </Text>
+                    <TextInput style={styles.input} placeholder="Username"/>
+                    <TextInput style={styles.input} placeholder="Password"/>
+                    <TouchableOpacity style={styles.button}>
+                        <Text style={styles.text}>LOGIN</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate("Register")} style={styles.button}>
+                        <Text style={styles.text}>Register</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         )

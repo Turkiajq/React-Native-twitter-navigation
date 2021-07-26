@@ -9,37 +9,20 @@ export default class Register extends Component {
                 <View style={styles.img}>
                     <Image  source={require('../assets/twitter-logo.png')} style={styles.logo} />
                 </View>
-                <View style={styles.box}>
-                <Text style={styles.text}> Register </Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Username"
-                    
-                />
-                 <TextInput
-                    style={styles.input}
-                    placeholder="First Name"
-                    
-                />
-                <TextInput
-                    style={styles.input}
-                    placeholder="Last Name"
-                    
-                />
-                <TextInput
-                style={styles.input}
-                placeholder="Password"/>
-
-                <TextInput
-                style={styles.input}
-                placeholder="Re-Enter Password"/>
-                </View>
+                    <View style={styles.box}>
+                        <Text style={styles.text}> Register </Text>
+                        <TextInput style={styles.input} placeholder="Username"/>
+                        <TextInput style={styles.input} placeholder="First Name"/>
+                        <TextInput style={styles.input} placeholder="Last Name"/>
+                        <TextInput style={styles.input} placeholder="Password"/>
+                        <TextInput style={styles.input} placeholder="Re-Enter Password"/>
+                    </View>
                 <TouchableOpacity style={styles.button}>
-                                    <Text style={styles.text}>Register</Text>
-                                </TouchableOpacity>
+                    <Text style={styles.text}>Register</Text>
+                </TouchableOpacity>
                 <TouchableOpacity onPress={() => this.props.navigation.navigate("Login")} style={styles.button}>
-                                    <Text style={styles.text}>LOGIN</Text>
-                                </TouchableOpacity>
+                    <Text style={styles.text}>LOGIN</Text>
+                </TouchableOpacity>
             </View>
         )
     }
